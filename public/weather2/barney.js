@@ -3,6 +3,10 @@ $(window).load(function() {
   apiCall();
 });
 
+function C2F(k) {
+  return Math.round(k * (9 / 5) + 32) + "*";
+}
+
 var apiCall=function(){
 $.getJSON("http://ip-api.com/json", function(data) {
     var lati = data.lat;
@@ -11,8 +15,8 @@ $.getJSON("http://ip-api.com/json", function(data) {
   console.log(loni);
   console.log(data.city);
   $(".city").html(data.city);
-  $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+loni+"&units=metric"+"&type=accurate"+"&APPID=11e9338b9590df864561b96c16f91b12", function(data1) {
-    var weath=data1.main.temp;
+  $.getJSON("http://api.openweathermap.org/data/2.5/weather?lat="+lati+"&lon="+loni+"&units=metric"+"&type=accurate"+"&APPID=87477587e12826b182b4b7cef844ec61", function(data1) {
+    var weath=C2F(data1.main.temp);
     console.log(weath);
     console.log(data1.sys);
     console.log(data1.weather);

@@ -85,7 +85,7 @@ window.onload = function () {
   wind = document.getElementById("wind");
   direction = document.getElementById("direction");
 
-  if (!navigator.geolocation) {
+  if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   } else {
    var zip = window.prompt("Could not discover your location: What is your zip code?");
