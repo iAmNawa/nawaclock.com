@@ -6,6 +6,9 @@ header {
   height: 550px;
   background: url(https://cldup.com/achlD-26iK.jpg) no-repeat center top;
   position: relative;
+	border-style: solid;
+	border-width: 5px;
+	border-color: black;
 }
 
 h1 {
@@ -19,11 +22,12 @@ h1 {
 
 h2 {
   text-align: center;
-    font-size: 50px;
+    font-size: 25px;
     color: #f2f0f0;
     font-family: 'Sigmar One', cursive;
     text-shadow: 0px 4px 4px #554f4f;
     padding: 420px 0px 0px 40px;
+		margin-bottom: 0px;
 }
 
 h3 {
@@ -38,8 +42,8 @@ h3 {
 
 }
 ul.player {
-	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 0px;
+	margin-top: 0px;
 	list-style: none;
 }
 
@@ -54,9 +58,9 @@ ul.player li {
   text-align: center;
   color: #fff;
   width: 400px;
-  margin: auto;
-  font-family: 'Sigmar One', cursive;
-  font-size: 25px;
+	margin: auto;
+  font-family: verdana;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
@@ -99,4 +103,16 @@ ul.player li#paused {
 	color: #FFF;
 	font-weight: bold;
 	background-position: 57px 17px;
+}
+
+.ready {
+	background-color: black;
+}
+
+.info {
+	background-color: red;
+}
+
+#margintop {
+	margin-top: 0px;
 }
