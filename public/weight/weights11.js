@@ -14,4 +14,4 @@ function whichPlates(input) {
   }
   return putThemOn;
 }
-console.log(whichPlates(125));
+console.log(whichPlates(425));
