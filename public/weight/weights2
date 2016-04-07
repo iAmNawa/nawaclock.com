@@ -1,0 +1,8 @@
+function whichPlates(input) {
+  var numbas = [];
+  var plates = [90, 70, 50, 20, 10, 5];
+   while ( input > 0 ) {
+    for (var i = 0 ; i < plates.length; i++) {
+      while( input > plates[i] ) {
+        input-=plates[0];
+         j=j+1;}}//where j will be a counter
