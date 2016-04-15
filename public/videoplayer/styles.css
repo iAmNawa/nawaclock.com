@@ -17,6 +17,10 @@ img {
   background-color: rgb(70,70,70);
 }
 
+img:hover {
+  background-color: rgb(50,170,220);
+}
+
 img, #pbar-container, #sbar-container {
   cursor: pointer;
 }
