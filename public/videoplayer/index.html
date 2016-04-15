@@ -5,8 +5,27 @@
 		<link rel="stylesheet" type="text/css" href="styles.css">
 	</head>
 	<body>
-    <h1 id="red">hello</hi>
-      <video src="imagesvideo/sample.mp4"></video>
+    <div id="player">
+      <div id="video-container">
+        <video poster="imagesvideo/thumbnail.png">
+          <source src="imagesvideo/sample.mp4">
+        </video>
+      </div>
+    <div id="pbar-container">
+     <div id="pbar"></div>
+    </div>
+    <div id="buttons-container">
+     <img src="imagesvideo/play.png">
+      <div id="time-field">
+        0:00 / 0:00
+      </div>
+      <img src="imagesvideo/sound.png">
+      <div id="sbar-container">
+        <div id ="sbar"></div>
+    </div>
+    <img src="imagesvideo/fullscreen.png">
+  </div>
+
 		<script src="scripts.js"></script>
 	</body>
 </html>
