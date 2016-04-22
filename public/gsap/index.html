@@ -16,6 +16,7 @@ a#myAdLink {
   width: 650px; height: 200px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
 }
 
 #myAd .myAd_Img {
@@ -27,6 +28,7 @@ a#myAdLink {
   width: inherit;
   height: inherit;
   top: 0px; left: 0px;
+  background-repeat: repeat-x;
 }
 
 #myAd #myAd_photo {
@@ -71,6 +73,11 @@ a#myAdLink {
   top: 110px; left: 390px;
 }
 
+#myAd #myAd_txt1 span {
+  display: inline-block;
+  position: relative;
+}
+
 		</style>
 	</head>
 	<body>
@@ -79,7 +86,11 @@ a#myAdLink {
    <div id="myAd">
     <div class="myAd_Img" id="myAd_clouds"></div>
      <div class="myAd_Img" id="myAd_photo"></div>
-      <div id="myAd_txt1">Feeling stressed?</div>
+      <div id="myAd_txt1">
+              <span id="myAd_ltr01">F</span><span id="myAd_ltr02">e</span><span id="myAd_ltr03">e</span><span id="myAd_ltr04">l</span><span id="myAd_ltr05">i</span><span id="myAd_ltr06">n</span><span id="myAd_ltr07">g</span>
+              <span id="myAd_ltr08">S</span><span id="myAd_ltr09">t</span><span id="myAd_ltr10">r</span><span id="myAd_ltr11">e</span><span id="myAd_ltr12">s</span><span id="myAd_ltr13">s</span><span id="myAd_ltr14">e</span><span id="myAd_ltr15">d</span><span id="myAd_ltr16">?</span>
+       </div>
+
        <div id="myAd_txt2">You could be here!</div>
         <div class="myAd_Img" id="myAd_shadow"></div>
          <div class="myAd_Img" id="myAd_txt3"></div>
@@ -93,10 +104,33 @@ a#myAdLink {
 <script type="text/javascript" src="TweenMax.min.js"></script>
 <script type="text/javascript">
 (function(){
-
     var tl1 = new TimelineMax();
+  tl1.to('#myAd', 2, { opacity: 1})
+    .from('#myAd_txt2', 1.3, { top: -100, ease: Power2.easeOut})
+    .to('#myAd_ltr01', 2, {top:210, left: -70, rotation: -100, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr02', 2, {top:210, left: -60, rotation: 45, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr03', 2, {top:210, left: -50, rotation: -60, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr04', 2, {top:210, left: -40, rotation: -90, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr05', 2, {top:210, left: -30, rotation: -180, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr06', 2, {top:210, left: -20, rotation: 10, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr07', 2, {top:210, left: -10, rotation: -25, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr08', 2, {top:210, left: -0, rotation: 70, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr09', 2, {top:210, left: 10, rotation: -110, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr10', 2, {top:210, left: 20, rotation: 55, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr11', 2, {top:210, left: 30, rotation: -40, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr12', 2, {top:210, left: 40, rotation: -165, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr13', 2, {top:210, left: 50, rotation: -5, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr14', 2, {top:210, left: 60, rotation: 85, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr15', 2, {top:210, left: 70, rotation: -100, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .to('#myAd_ltr16', 2, {top:210, left: 80, rotation: 100, ease: Power2.easeOut}, 'myAd_ltr-=.9')
+    .from('#myAd_marker', 1.2, {top: -110, ease: Bounce.easeOut}, '-=.5')
+    .from('#myAd_shadow', 1.2, { opacity: 0, ease: Bounce.easeOut}, '-=1.2')
+    .from('#myAd_txt3', 1.2, { scale:.2, opacity: 0, ease: Power2.easeOut}, '-=.9')
+    .from('#myAd_surfboard', 1.3, { top: 260, rotation:-130, left: 300, ease: Back.easeOut}, 'cta');
 
-    tl1.from('#myAd_txt2', 1.3, { top: -100});
+    //tl1.seek('cta');
+      var tl2 = new TimelineMax({repeat:-1});
+    tl2.to('#myAd_clouds', 65, { backgroundPositionX: 649, ease: Power0.easeOut})
 
 }());
 </script>
