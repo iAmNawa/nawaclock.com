@@ -14,7 +14,6 @@ function click(e){
   var firstInt = Number(winput.value)
   var secondInt = Number(binput.value)
 var i = firstInt
-var j = secondInt
 
 
 var myInterval = setInterval(function() {
@@ -22,6 +21,7 @@ var myInterval = setInterval(function() {
 
     if (i === 0) {
        breakTime()
+       clearInterval(myInterval)
         //call your function
     }
     else {
@@ -31,8 +31,20 @@ var myInterval = setInterval(function() {
 
 }
 
-function breakTime {
+function breakTime(f) {
+    var secondInt = Number(binput.value)
+    var j = secondInt
+var myInterval2 = setInterval(function() {
+    document.getElementById("workero").innerHTML = "Number: " + j
 
+    if (j === 0) {
+       clearInterval(breakTime)
+        //call your function
+    }
+    else {
+        j--
+       }
+    }, 1000)
 }
 
 
