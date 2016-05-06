@@ -1,4 +1,4 @@
-var winput = document.querySelector('#worker')
+var ainput = document.querySelector('#worker')
 var binput = document.querySelector('#breaker')
 var submit = document.querySelector('#submit')
 //var woutput = document.querySelector('#workero')
@@ -11,7 +11,7 @@ submit.addEventListener('click', click, false)
 
 //fires when submit button is clicked
 function click(e){
-  var firstInt = Number(winput.value)
+  var firstInt = Number(ainput.value)
   var secondInt = Number(binput.value)
 var i = firstInt
 
@@ -19,7 +19,7 @@ var i = firstInt
 var myInterval = setInterval(function() {
     document.getElementById("workero").innerHTML = "Number: " + i
 
-    if (i === 0) {
+    if (i === 1) {
        breakTime()
        clearInterval(myInterval)
         //call your function
