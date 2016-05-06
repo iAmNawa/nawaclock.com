@@ -11,12 +11,32 @@ submit.addEventListener('click', click, false)
 
 //fires when submit button is clicked
 function click(e){
-  var firstInt = winput.value
-  var secondInt = binput.value
-  console.log(firstInt)
-  console.log(secondInt)
+  var firstInt = Number(winput.value)
+  var secondInt = Number(binput.value)
+var i = firstInt
+var j = secondInt
+
+
+var myInterval = setInterval(function() {
+    document.getElementById("workero").innerHTML = "Number: " + i
+
+    if (i === 0) {
+       breakTime()
+        //call your function
+    }
+    else {
+        i--
+       }
+    }, 1000)
 
 }
+
+function breakTime {
+
+}
+
+
+
 
 /* function wevent(e){
   console.log('form update', e.target.value)
