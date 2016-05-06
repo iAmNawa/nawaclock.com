@@ -1,6 +1,7 @@
 var ainput = document.querySelector('#worker')
 var binput = document.querySelector('#breaker')
 var submit = document.querySelector('#submit')
+var audio = new Audio('audio/beep-02.mp3');
 //var woutput = document.querySelector('#workero')
 
 // the click event fires when you click
@@ -11,13 +12,11 @@ submit.addEventListener('click', click, false)
 
 //fires when submit button is clicked
 function click(e){
-  var firstInt = Number(ainput.value)
-var i = firstInt
-
+var i = Number(ainput.value)
+setTimeout(function(){ audio.play(); }, 1000);
 
 var myInterval = setInterval(function() {
     document.getElementById("workero").innerHTML = "Number: " + i
-
     if (i === 0) {
        clearInterval(myInterval)
        breakTime()
@@ -31,8 +30,9 @@ var myInterval = setInterval(function() {
 }
 
 function breakTime(f) {
-    var secondInt = Number(binput.value)
-    var j = secondInt
+var j = Number(binput.value)
+setTimeout(function(){ audio.play(); }, 1000);
+
 var myInterval2 = setInterval(function() {
     document.getElementById("breakero").innerHTML = "Number: " + j
 
