@@ -3,6 +3,8 @@ function startTimer(duration, display) {
         diff,
         minutes,
         seconds;
+        console.log(Date.now());
+        console.log(start);
     function timer() {
         // get the number of seconds that have elapsed since
         // startTimer() was called
@@ -28,8 +30,11 @@ function startTimer(duration, display) {
     setInterval(timer, 1000);
 }
 
-window.onload = function () {
-    var fiveMinutes = 60 * 5,
+firstNum = .10;
+secondNum = .25;
+
+function timeHer() {
+    var fortyFive = 60 * firstNum,
         display = document.querySelector('#time');
-    startTimer(fiveMinutes, display);
+    startTimer(fortyFive, display);
 };
