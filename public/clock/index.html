@@ -5,8 +5,13 @@
 		<link rel="stylesheet" type="text/css" href="script.css">
 	</head>
 	<body>
-  <div>Registration closes in <button onclick="timeHer()" id="time"></button> minutes!</div>
-		<!-- HTML markup goes here -->
+    <form id="workout">
+      How many minutes?:<br>
+      <input type="text" name="workout"><br>
+      How much break:<br>
+      <input type="text" name="break">
+      <input type="button" onclick="myFunction()" value="Submit">
+    </form>
 		<script src="clock.js"></script>
 	</body>
 </html>
