@@ -12,16 +12,15 @@ submit.addEventListener('click', click, false)
 //fires when submit button is clicked
 function click(e){
   var firstInt = Number(ainput.value)
-  var secondInt = Number(binput.value)
 var i = firstInt
 
 
 var myInterval = setInterval(function() {
     document.getElementById("workero").innerHTML = "Number: " + i
 
-    if (i === 1) {
-       breakTime()
+    if (i === 0) {
        clearInterval(myInterval)
+       breakTime()
         //call your function
     }
     else {
@@ -35,10 +34,11 @@ function breakTime(f) {
     var secondInt = Number(binput.value)
     var j = secondInt
 var myInterval2 = setInterval(function() {
-    document.getElementById("workero").innerHTML = "Number: " + j
+    document.getElementById("breakero").innerHTML = "Number: " + j
 
     if (j === 0) {
-       clearInterval(breakTime)
+       clearInterval(myInterval2)
+       click()
         //call your function
     }
     else {
