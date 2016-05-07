@@ -2,9 +2,9 @@ var ainput = document.querySelector('#worker')
 var binput = document.querySelector('#breaker')
 var cinput = document.querySelector('#timer')
 var submit = document.querySelector('#submit')
-var audio = new Audio('audio/beep-02.mp3')
-var audio2 = new Audio('audio/Go.mp3')
-var audio3 = new Audio('audio/breaktime.mp3')
+var audio = new Audio('bent/audio/beep-02.mp3')
+var audio2 = new Audio('bent/audio/Go.mp3')
+var audio3 = new Audio('bent/audio/breaktime.mp3')
 var times = 0;
 //var woutput = document.querySelector('#workero')
 
