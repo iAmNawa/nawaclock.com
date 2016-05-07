@@ -2,7 +2,9 @@ var ainput = document.querySelector('#worker')
 var binput = document.querySelector('#breaker')
 var cinput = document.querySelector('#timer')
 var submit = document.querySelector('#submit')
-var audio = new Audio('audio/beep-02.mp3');
+var audio = new Audio('audio/beep-02.mp3')
+var audio2 = new Audio('audio/Go.mp3')
+var audio3 = new Audio('audio/breaktime.mp3')
 var times = 0;
 //var woutput = document.querySelector('#workero')
 
@@ -16,7 +18,7 @@ submit.addEventListener('click', click, false)
 function click(e){
   document.getElementById("worker")
 var i = Number(ainput.value)
-setTimeout(function(){ audio.play(); }, 1000);
+setTimeout(function(){ audio2.play(); }, 1000);
 
 var myInterval = setInterval(function() {
     document.getElementById("workero").innerHTML = "Number: " + i
@@ -35,7 +37,7 @@ var myInterval = setInterval(function() {
 function breakTime(f) {
 var j = Number(binput.value)
 var k = Number(cinput.value)
-setTimeout(function(){ audio.play(); }, 1000);
+setTimeout(function(){ audio3.play(); }, 1000);
 
 var myInterval2 = setInterval(function() {
     document.getElementById("breakero").innerHTML = "Number: " + j
