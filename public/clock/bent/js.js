@@ -14,6 +14,7 @@ submit.addEventListener('click', click, false)
 
 //fires when submit button is clicked
 function click(e){
+  document.getElementById("worker")
 var i = Number(ainput.value)
 setTimeout(function(){ audio.play(); }, 1000);
 
@@ -44,10 +45,13 @@ var myInterval2 = setInterval(function() {
        times++
        console.log(times)
        if (k == times) {
-         location.reload()
-       }
+         document.getElementById("workero").innerHTML = "Great job!"
+         document.getElementById("breakero").innerHTML = "You finished!"
+         times = 0
+         console.log(times)
+       } else {
 
-       click()
+       click() }
         //call your function
     }
     else {
