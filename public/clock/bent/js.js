@@ -1,7 +1,9 @@
 var ainput = document.querySelector('#worker')
 var binput = document.querySelector('#breaker')
+var cinput = document.querySelector('#timer')
 var submit = document.querySelector('#submit')
 var audio = new Audio('audio/beep-02.mp3');
+var times = 0;
 //var woutput = document.querySelector('#workero')
 
 // the click event fires when you click
@@ -31,6 +33,7 @@ var myInterval = setInterval(function() {
 
 function breakTime(f) {
 var j = Number(binput.value)
+var k = Number(cinput.value)
 setTimeout(function(){ audio.play(); }, 1000);
 
 var myInterval2 = setInterval(function() {
@@ -38,6 +41,12 @@ var myInterval2 = setInterval(function() {
 
     if (j === 0) {
        clearInterval(myInterval2)
+       times++
+       console.log(times)
+       if (k == times) {
+         location.reload()
+       }
+
        click()
         //call your function
     }
