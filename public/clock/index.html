@@ -1,20 +1,34 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Basic HTML document</title>
-		<link rel="stylesheet" type="text/css" href="script.css">
 	</head>
 	<body>
-    <form id="workout">
-      How many seconds:<br>
+
+		<h1>Workout timer</h1>
+		<p id="explain">This is a workout interval timer.  Choose how many seconds you want
+			to work for, and then how many seconds rest.  For example, if you are doing ab
+			work, and you want to do 60 seconds of abs, with 15 second rest: Put 60 in
+			first input and 15 in the second input.
+
+    <br>
+		<br>
+
+    <div id="workout">
+      How many seconds?:<br>
       <input id="worker" type="text" name="work">
 			<br>
-      How many seconds break:<br>
+      How many seconds for break?:<br>
       <input id="breaker" type="text" name="break">
-      <input type="button" onclick="myFunction()" value="Submit">
-    </form>
+			<br>
+			How many times?:<br>
+      <input id="timer" type="text" name="time">
+      <button id='submit'>submit</button>
+    </div>
 
-    <p id="demo"></p>
-		<script src="clock.js"></script>
+    <p id='workero'></p>
+    <p id='breakero'></p>
+	<script src="js.js"></script>
 	</body>
 </html>
