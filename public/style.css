@@ -2,3 +2,19 @@ body {
   text-align: center;
   font-family: verdana;
 }
+
+a {
+  display: block;
+  color: black;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  transition: .3s;
+}
+
+a:hover {
+  background-color: #D3D3D3;
+  color: white;
+}
