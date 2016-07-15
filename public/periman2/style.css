@@ -1,0 +1,70 @@
+body {
+  background-color:	#413D3D;
+
+}
+.box-quote {
+  background-color:#413D3D;
+  margin:10% 20% 0% 20%;
+  min-height:100px;
+  border-style:solid;
+  border-width:5px;
+  border-color:#AC5B5E;
+  border-radius:10%;
+  color:#F0F0F0;
+  padding:3%;
+  potition:static;
+}
+
+.quote {
+  color:#AC5B5E;
+  font-family:"Poiret One", cursive;
+  margin:auto;
+
+}
+
+.button-box {
+  margin:10% 20% 15% 30%;
+  width:55%;
+  pudding:2%;
+
+
+
+}
+.button:hover {
+  background-color:#E2A3A5;
+  color:#413D3D
+}
+.button2:hover {
+  background-color:#E2A3A5;
+  color:#413D3D
+}
+
+.button {
+   height:50%;
+  width: 50%;
+  font-family:"Poiret One",cursive;
+  background-color:#413D3D;
+  border-color:transparent;
+  border-radius:20%;
+  font-size:25px;
+  color:#E2A3A5;
+  float:left;
+  button:focus;
+  outline:0;
+}
+.button2{
+  height:50%;
+  width: 50%;
+  font-family:"Poiret One",cursive;
+  background-color:#413D3D;
+  border-color:transparent;
+  border-radius:20%;
+  font-size:25px;
+  color:#E2A3A5;
+  float:right;
+  button:focus;
+  outline:0;
+}
+.author {
+  margin-left: 25%;
+}
