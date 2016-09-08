@@ -19,3 +19,9 @@ a:hover {
   background-color: #000000;
   color: white;
 }
+
+.bottom {;
+  text-align: center;
+  font-family: arial;
+  font-weight: bold
+}
