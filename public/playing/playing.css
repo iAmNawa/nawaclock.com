@@ -1,0 +1,26 @@
+.heada {
+  text-align: center;
+  
+}
+
+.container1 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.container1A {
+ width: 250px;
+ text-align: center;
+}
+
+.container2 {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+
+.container2A {
+  width: 250px;
+  text-align: center;
+}
