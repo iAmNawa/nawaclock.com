@@ -1,6 +1,6 @@
 .heada {
   text-align: center;
-  
+
 }
 
 .container1 {
@@ -12,6 +12,7 @@
 .container1A {
  width: 250px;
  text-align: center;
+ margin-top: 50px;
 }
 
 .container2 {
@@ -23,4 +24,5 @@
 .container2A {
   width: 250px;
   text-align: center;
+  margin-top: 100px;
 }
