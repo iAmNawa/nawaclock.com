@@ -8,3 +8,5 @@ This will take a look at the image with an ID of imagez from the index.html and
 change the h1 tag with an ID of pleaseWork2 to the text from the image.  It uses
 tesseract to identify letters in an image and can return the text from the image.
 You can add an image to the photos folder and change the image in the index.html
+
+After all that start tesseract.js and go to localhost:1444
