@@ -1,44 +1,40 @@
 let chore1 = function() {
   return new Promise(function(resolve, reject) {
-    resolve('chore 1')
+    resolve('chore 1 ')
   })
 }
 
-let chore2 = function() {
+let chore2 = function(message) {
   return new Promise(function(resolve, reject) {
-    resolve('chore 2')
+    resolve( message +'chore 2 ')
   })
 }
 
-let chore3 = function() {
+let chore3 = function(message) {
   return new Promise(function(resolve, reject) {
-    resolve('chore 3')
+    resolve( message + 'chore 3 ')
   })
 }
 
-let chore4 = function() {
+let chore4 = function(message) {
   return new Promise(function(resolve, reject) {
-    resolve('chore 4')
+    resolve( message + 'chore 4 ')
   })
 }
 
-let chore5 = function() {
+let chore5 = function(message) {
   return new Promise(function(resolve, reject) {
-    resolve('chore 5')
+    resolve( message + 'chore 5 ')
   })
 }
 
 chore1().then(function(result) {
-  console.log('finished ' +result)
   return chore2(result)
 }).then(function(result) {
-  console.log('finished ' +result)
   return chore3(result)
 }).then(function(result) {
-  console.log('finished ' +result)
-  return chore4('done' + result)
+  return chore4(result)
 }).then(function(result) {
-  console.log('finished ' +result)
   return chore5(result)
 }).then(function(result) {
   console.log('finished ' + result)
