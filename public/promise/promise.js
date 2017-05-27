@@ -4,10 +4,12 @@ let promiseKiss = new Promise(function(resolve, reject) {
   if(sentAKiss){
     resolve('kiss')
   } else {
-    reject('non kiss')
+    reject('kiss')
   }
 })
 
 promiseKiss.then(function(fromResolve) {
-  console.log('you recieved a ' + fromResolve)
+  console.log('you received a ' + fromResolve)
+}).catch(function(fromReject) {
+  console.log('you did not receive a ' + fromReject)
 })
