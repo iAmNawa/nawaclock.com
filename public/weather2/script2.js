@@ -1,7 +1,7 @@
 "use strict";
 
 //Fetch request
-(function() {
+/*(function() {
   var url = "http://api.openweathermap.org/data/2.5/weather?q=London,England";
   var apiKey = "f73b0a8f3e90b9ded92737672aa2aa41"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
 
@@ -13,11 +13,11 @@
     console.log(response.json())
   })
 })();
-
+*/
 //XHR request
-/*
+
 (function() {
-  var url = "http://api.openweathermap.org/data/2.5/weather?q=London,England";
+  var url = "http://api.openweathermap.org/data/2.5/weather?id=7261058";
   var apiKey = "f73b0a8f3e90b9ded92737672aa2aa41"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
   var httpRequest;
   makeRequest();
@@ -58,4 +58,9 @@
     weatherBox.className = "hidden"
   }
 })();
-*/
+
+var date = new Date();
+var n = date.toDateString();
+var time = date.toLocaleTimeString();
+
+document.getElementById('time').innerHTML = n + ' ' + time;
