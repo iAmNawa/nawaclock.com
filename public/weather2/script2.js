@@ -10,6 +10,7 @@
       console.log("There was a problem")
     }
     console.log(response)
+    console.log(response.json())
   })
 })();
 
