@@ -97,4 +97,7 @@ body {
   #weather {
     font-size: 20px;
   }
+  #mainheader {
+    text-shadow: 0px 0px 5px white;
+  }
 }
