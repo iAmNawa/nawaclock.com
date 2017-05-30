@@ -1,5 +1,10 @@
 "use strict";
 
+
+
+
+//XHR request
+/*
 (function() {
   var url = "http://api.openweathermap.org/data/2.5/weather?q=London,England";
   var apiKey = "f73b0a8f3e90b9ded92737672aa2aa41"; // Replace "APIKEY" with your own API key; otherwise, your HTTP request will not work
@@ -42,3 +47,4 @@
     weatherBox.className = "hidden"
   }
 })();
+*/
