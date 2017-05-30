@@ -1,16 +1,19 @@
 /* Layout */
 
 body {
-  background: -webkit-linear-gradient(left, #52c234, #DCE35B);
-  background: -moz-linear-gradient(left, #52c234, #DCE35B);
-  background: linear-gradient(to right, #52c234, #DCE35B);
+  background: url("../photos/bg-pattern.png"), #7b4397;
+  /* fallback for old browsers */
+  background: url("../photos/bg-pattern.png"), -webkit-linear-gradient(to left, #666666, #45B649);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: url("../photos/bg-pattern.png"), linear-gradient(to left, #666666, #45B649);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #mainheader {
   text-align: center;
   font-family: 'El Messiri', sans-serif;
   font-size: 50px;
-  text-shadow: 1px 1px 1px orange;
+  text-shadow: 1px 1px 1px white;
 }
 
 .main {
@@ -77,4 +80,15 @@ body {
 #second {
     transform-origin: 300px 300px;
 /*    transition: transform .5s ease-in-out; */
+}
+
+/* WEATHER */
+#weather {
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  text-align: center;
+  font-family: 'El Messiri', sans-serif;
+  font-size: 35px;
+  text-shadow: 2px 2px 5px #999999;
 }

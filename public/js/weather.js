@@ -37,7 +37,7 @@
     var city = response.name
     console.log(city)
     var weatherBox = document.getElementById('weather')
-    weatherBox.innerHTML = "<p>" + city + "</p><p>"  + degFInt + "&#176; Fahrenheit</p><p>" + condition + "</p><p>" + humidity + " humidity" + "</p><p>" + windSpeed + " wind speed" + "</p>"
+    weatherBox.innerHTML = "<p>Location: " + city + "</p><p>Temperature: "  + degFInt + "&#176; Fahrenheit</p><p>Sky: " + condition + "</p><p>Humidity: " + humidity + "%</p><p>Wind Speed: " + windSpeed + " MPH</p>"
   }
 
   //handle XHR error
