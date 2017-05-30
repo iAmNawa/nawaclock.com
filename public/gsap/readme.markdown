@@ -1,2 +1,0 @@
-#GSAP
-practice GSAP lessons
