@@ -1,3 +1,10 @@
+body {
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 1px orange;
+}
+
 .container {
   background-color: black;
   border-radius: 50%;
@@ -30,4 +37,5 @@ h1 {
 
 p {
   color: black;
+  font-family: 'Arimo', sans-serif;
 }

@@ -48,8 +48,10 @@
     var degCInt = Math.floor(degC)
     var degF = degC * 1.8 + 32
     var degFInt = Math.floor(degF)
+    var humidity = response.main.humidity
+    var windSpeed = response.wind.speed
     var weatherBox = document.getElementById('weather')
-    weatherBox.innerHTML = "<p>" + degCInt + "&#176; C / " + degFInt + "&#176; F</p><p>" + condition + "</p>"
+    weatherBox.innerHTML = "<p>"  + degFInt + "&#176; Fahrenheit</p><p>" + condition + "</p><p>" + humidity + " humidity" + "</p><p>" + windSpeed + " wind speed" + "</p>"
   }
 
   //handle XHR error
